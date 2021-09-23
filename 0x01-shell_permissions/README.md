@@ -1,4 +1,4 @@
-#Description of what each script is doing
+# Description of what each script is doing
 
 ## 0. My name is Betty
 
