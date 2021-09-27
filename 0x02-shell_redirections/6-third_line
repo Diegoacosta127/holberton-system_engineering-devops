@@ -1,2 +1,3 @@
 #!/bin/bash
-cat iacta | grep '^ *3\s'
+# cat iacta | grep '^ *3\s'
+awk "NR==3{print;exit}" iacta
