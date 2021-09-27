@@ -1,2 +1,2 @@
 #!/bin/bash
-cat ./iacta | grep '^ *3'
+cat ./iacta | grep '^ *3\s'
