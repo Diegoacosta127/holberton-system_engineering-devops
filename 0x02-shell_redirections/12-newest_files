@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -l -Art | tail -n 10
