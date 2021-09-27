@@ -1,2 +1,2 @@
 #!/bin/bash
-nl iacta | grep '^ *3'
+mapfile -s 2 -n 1 ary < iacta | printf '%s' "${ary[0]}"
