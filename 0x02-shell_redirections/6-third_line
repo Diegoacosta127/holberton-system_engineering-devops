@@ -1,2 +1,2 @@
 #!/bin/bash
-mapfile -s 2 -n 1 ary < iacta | printf '%s' "${ary[0]}"
+head -3 | tail n-3 /iacta
