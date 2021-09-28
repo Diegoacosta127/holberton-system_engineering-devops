@@ -1,6 +1,6 @@
 # Description of what each script is doing
 
-## 0. <o>
+## 0. \<o\>
 
 Create a script that creates an alias.
 
