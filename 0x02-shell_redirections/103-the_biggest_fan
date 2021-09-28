@@ -1,4 +1,2 @@
 #!/bin/bash
-#cut -d '\t' -f 1 
-#cut -d ':' -f 1,6 /etc/passwd | sort
 cut -f1 -d$'\t' | sort | uniq -c | tr -s ' ' | sort -t' ' -k1 -nr | head -11 | cut -d' ' -f3
