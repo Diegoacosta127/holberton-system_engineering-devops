@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Creates a file, displays something adn deletes it
+echo $$ >> /var/run/myscript.pid;
+trap 'echo I hate the kill command; exit' 15
+trap 'echo Y U no love me?!' 2
+while true
+do
+    echo To infinity and beyond
+    sleep 2
+done
+trap 'rm /var/run/myscript.pid' 3 15
