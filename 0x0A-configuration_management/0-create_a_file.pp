@@ -1,3 +1,4 @@
+# Creates a 'school 'file in /tmp
 file { '0-create_a_file':
     path    => '/tmp/school',
     mode    => '0744',
