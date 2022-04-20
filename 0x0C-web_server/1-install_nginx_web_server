@@ -2,7 +2,5 @@
 # Configure a Ubuntu machine when querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Hello World
 sudo apt-get update
 sudo apt-get install nginx -y
-sudo ufw allow 'Nginx HTTP OpenSSH'
-sudo ufw enable
 sudo service nginx restart
-echo Hello World | sudo tee /var/www/html/index.nginx-debian.html
+echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
