@@ -9,6 +9,6 @@ if grep "add_header X-Served-By" /etc/nginx/nginx.conf
 then
     :
 else
-    sudo sed -i "/http {/a \\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+    sudo sed -i "/http {/a \\\tadd_header X-Served-By \$HOSTNAME;" /etc/nginx/nginx.conf
 fi
 sudo service nginx restart
