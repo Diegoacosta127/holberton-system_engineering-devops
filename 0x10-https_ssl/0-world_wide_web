@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# comment
+# Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
 my_func () {
 	if [ -n "$2" ]
 	then
 		record=$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
-		ip=$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk /"$1"/ | cut -d$'\t' -f 4,5)
+		ip=$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
 		echo "The subdomain $2 is a $record record and points to $ip"
 	else
 		dig "www.$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print "The subdomain www is a "$4" record and points to "$5""}'
