@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# nginx runs as nginx user and listens all active IPs on port 8080
+chmod 777 /etc/nginx/nginx.conf
+if grep "user nginx" /etc/nginx/nginx.conf
+then
+	:
+else
+	sudo sed -i 's/#user www-data;/user nginx;/' /etc/nginx/nginx.conf
+fi
+sudo service nginx restart
