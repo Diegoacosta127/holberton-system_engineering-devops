@@ -15,7 +15,7 @@ if __name__ == "__main__":
         tasks += 1
     users = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                          .format(argv[1])).json()
-    print('Employee {} is done with tasks ({}/{}):'
+    print('Employee {} is done with tasks({}/{}):'
           .format(users.get('name'), done, tasks))
     for elem in ret:
         if elem.get('completed') is True:
