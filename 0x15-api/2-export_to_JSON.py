@@ -20,7 +20,7 @@ if __name__ == "__main__":
         my_list = []
         for elem in ret:
             my_list.append({'task': elem.get('title'),
-                           'completed': elem.get('completed'),
-                           'username': user.get('username')})
+                            'completed': elem.get('completed'),
+                            'username': user.get('username')})
         final = {'{}'.format(argv[1]): my_list}
         json.dump(final, f)
