@@ -18,8 +18,9 @@ if __name__ == "__main__":
             id_user = item.get('id')
             my_list = []
             for elem in ret:
-                my_list.append({'username': item.get('username'),
-                                'task': elem.get('title'),
-                                'completed': elem.get('completed')})
+                if elem.get('userId') == id_user:
+                    my_list.append({'username': item.get('username'),
+                                    'task': elem.get('title'),
+                                    'completed': elem.get('completed')})
             final[str(id_user)] = my_list
         json.dump(final, f)
