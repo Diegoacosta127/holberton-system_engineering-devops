@@ -6,9 +6,10 @@ import requests
 from sys import argv
 
 
-todos = 'https://jsonplaceholder.typicode.com/todos?userId={}'.format(argv[1])
-users = 'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1])
 if __name__ == "__main__":
+    todos = 'https://jsonplaceholder.typicode.com/todos?userId={}'\
+            .format(argv[1])
+    users = 'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1])
     done = 0
     tasks = 0
     ret = requests.get(todos).json()
