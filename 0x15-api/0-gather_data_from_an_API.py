@@ -2,9 +2,8 @@
 """Script that returns info about TODO list progress of an employee"""
 
 
-from sys import argv
 import requests
-import urllib
+from sys import argv
 if __name__ == "__main__":
     done = 0
     tasks = 0
