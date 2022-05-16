@@ -8,8 +8,6 @@ from sys import argv
 
 todos = 'https://jsonplaceholder.typicode.com/todos?userId={}'.format(argv[1])
 users = 'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1])
-
-
 if __name__ == "__main__":
     done = 0
     tasks = 0
@@ -23,4 +21,4 @@ if __name__ == "__main__":
           .format(user.get('name'), done, tasks))
     for elem in ret:
         if elem.get('completed') is True:
-            print('\t{}'.format(elem.get('title')))
+            print('\t {}'.format(elem.get('title')))
