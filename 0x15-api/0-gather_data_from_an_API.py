@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Script that returns info about TODO list progress of an employee"""
+
+
 from sys import argv
 import requests
 import urllib
