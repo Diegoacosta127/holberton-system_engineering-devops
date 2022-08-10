@@ -1,7 +1,7 @@
 # 0x0A. Configuration management
 ## Background context (by Sylvain Kalache)
 
-[![video](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/6a0a8024f2b1c47a9d1e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220810%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220810T195807Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4587d8bd998919a279e6f782c2d6f0a4fcaa5d61d0399d8c0bdea4abcfa52bc2)](https://youtu.be/ogYLFyp68cI)
+[![video](img.png)](https://youtu.be/ogYLFyp68cI)
 
 When I was working for SlideShare, I worked on an auto-remediation tool called [Skynet][1] that monitored, scaled and fixed Cloud infrastructure. I was using a parallel job-execution system called MCollective that allowed me to execute commands to one or multiple servers at the same time. I could apply an action to a selected set of servers by applying a filter such as the server’s hostname or any other metadata we had (server type, server environment…). At some point, a bug was present in my code that sent `nil` to the filter method.
 
