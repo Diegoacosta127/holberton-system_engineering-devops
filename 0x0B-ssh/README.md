@@ -1,6 +1,6 @@
 # 0x0B-ssh
 
-## Backgrpund context
+## Background context
 Along with this project, you have been attributed an Ubuntu server, living in a datacenter far far away. Like level 2 of the application process, you will connect using `ssh`. But contrary to level 2, you will not connect using a password but an RSA key. We’ve configured your server with the public key you created in the first task of [a previous project][1] shared in your [intranet profile][2].
 
 [1]: https://intranet.hbtn.io/rltoken/LZ_8pMANOAmpn5-tiwqiJQ
