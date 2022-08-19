@@ -27,3 +27,4 @@
 |**0x15**|**[API](./0x15-api/)**|
 |**0x16**|**[API advanced](./0x16-api_advanced/)**|
 |**0x19**|**[Postmortem](./0x19-postmortem/)**|
+|**Optional**|**[Command line for the win](/command_line_for_the_win/)**|
